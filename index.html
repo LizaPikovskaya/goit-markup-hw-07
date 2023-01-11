@@ -61,11 +61,12 @@
           </button>
           <nav class="mobile-nav">
  <ul class="mobile-nav-list list">
-              <li class="mobile-nav-item"><a class="mobile-nav-link link" href="#">Studio</a></li>
-              <li class="mobile-nav-item"><a class="mobile-nav-link link" href="#">Portfolio</a></li>
-              <li class="mobile-nav-item"><a class="mobile-nav-link link" href="#">Contacts</a></li>
+              <li class="mobile-nav-item"><a class="mobile-nav-link link" href="./index.html">Studio</a></li>
+              <li class="mobile-nav-item"><a class="mobile-nav-link link" href="./portfolio.html">Portfolio</a></li>
+              <li class="mobile-nav-item"><a class="mobile-nav-link link" href="#"><span>Contacts</span></a></li>
             </ul>
           </nav>
+          
           <ul class="mobile-contact-list list">
             <li class="mobile-contact-item"><a class="mobile-contact-phone link" href="tel:+11(000)1111111">+11 (000) 111-11-11</a></li>
             <li class="mobile-contact-item"><a class="mobile-contact-email link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
@@ -171,32 +172,41 @@
           <h2 class="concept-title">What are we doing</h2>
           <ul class="concept-list list">
             <li class="item">
-              <img
-                class="concept-image"
-                src="./images/computer.jpg"
-                alt="Screen of the computer"
-                width="360"
-                height="300"
-              />
+              <picture>
+                <source srcset="./images/computer@2x.jpg 2x">
+                <img
+                  class="concept-image"
+                  src="./images/computer.jpg"
+                  alt="Screen of the computer"
+                  width="360"
+                  height="300"
+                />
+              </picture>
             </li>
 
             <li class="item">
-              <img
-                class="concept-image"
-                src="./images/phone.jpg"
-                alt="Phone"
-                width="360"
-                height="300"
-              />
+              <picture>
+                <source srcset="./images/phone@2x.jpg 2x">
+                <img
+                  class="concept-image"
+                  src="./images/phone.jpg"
+                  alt="Phone"
+                  width="360"
+                  height="300"
+                />
+              </picture>
             </li>
             <li class="item">
-              <img
-                class="concept-image"
-                src="./images/laptop-and-phone.jpg"
-                alt="Laptop and phone"
-                width="360"
-                height="300"
-              />
+              <picture>
+                <source srcset="./images/laptop-and-phone@2x.jpg 2x">
+                <img
+                  class="concept-image"
+                  src="./images/laptop-and-phone.jpg"
+                  alt="Laptop and phone"
+                  width="360"
+                  height="300"
+                />
+              </picture>
             </li>
           </ul>
         </div>
@@ -206,13 +216,18 @@
           <h2 class="team-title">Our Team</h2>
           <ul class="team-list list">
             <li class="item">
-              <img
-                class="emploee-image"
-                src="./images/mark-guerrero.jpg"
-                alt="Product Designer"
-                width="264"
-                height="260"
-              />
+
+              <picture >
+                <source srcset="./images/mark-guerrero@2x.jpg 2x" type="image/jpeg" />
+                <img
+                  class="emploee-image"
+                  src="./images/mark-guerrero.jpg"
+                  alt="Product Designer"
+                  width="264"
+                  height="260"
+                />
+              </picture>
+
               <div class="emploee-card-wrapper">
                 <h3 class="title">Mark Guerrero</h3>
                 <p class="text">Product Designer</p>
@@ -249,13 +264,16 @@
               </div>
             </li>
             <li class="item">
-              <img
-                class="emploee-image"
-                src="./images/tom-ford.jpg"
-                alt="Frontend Developer"
-                width="264"
-                height="260"
-              />
+
+              <picture>
+                <source srcset="./images/tom-ford@2x.jpg 2x">
+                <img
+                  class="emploee-image"
+                  src="./images/tom-ford.jpg"
+                  alt="Frontend Developer"
+                  width="264"
+                  height="260"/>
+              </picture>
               <div class="emploee-card-wrapper">
                 <h3 class="title">Tom Ford</h3>
                 <p class="text">Frontend Developer</p>
@@ -292,13 +310,16 @@
               </div>
             </li>
             <li class="item">
-              <img
-                class="emploee-image"
-                src="./images/camila-garcia.jpg"
-                alt="Marketing Manager"
-                width="264"
-                height="260"
-              />
+              <picture>
+                <source srcset="./images/camila-garcia@2x.jpg 2x">
+                <img
+                  class="emploee-image"
+                  src="./images/camila-garcia.jpg"
+                  alt="Marketing Manager"
+                  width="264"
+                  height="260"
+                />
+              </picture>
               <div class="emploee-card-wrapper">
                 <h3 class="title">Camila Garcia</h3>
                 <p class="text">Marketing</p>
@@ -335,13 +356,16 @@
               </div>
             </li>
             <li class="item">
-              <img
-                class="emploee-image"
-                src="./images/daniel-wilson.jpg"
-                alt="UI Designer"
-                width="264"
-                height="260"
-              />
+              <picture>
+                <source srcset="./images/daniel-wilson@2x.jpg 2x">
+                <img
+                  class="emploee-image"
+                  src="./images/daniel-wilson.jpg"
+                  alt="UI Designer"
+                  width="264"
+                  height="260"
+                />
+              </picture>
               <div class="emploee-card-wrapper">
                 <h3 class="title">Daniel Wilson</h3>
                 <p class="text">UI Designer</p>
@@ -430,50 +454,49 @@
         </div>
       </section> -->
     </main>
-    <!-- <footer class="footer">
+    <footer class="footer">
       <div class="container flex">
-        <div class="footer-wrapper-description">
-          <a href="./index.html" class="logo link"
-            >WEB<span class="logo-footer">STUDIO</span></a
-          >
-          <p class="text-footer">
-            Increase the flow of customers and sales for your business with
-            digital marketing & growth solutions.
-          </p>
-        </div>
-        <div class="footer-social-wrapper">
-          <p class="text">Social media</p>
-          <ul class="social-list list">
-            <li class="social-item">
-              <a href="#" class="social-link dark-theme">
-                <svg class="social-icon" width="24" height="24">
-                  <use href="./images/sprite.svg#icon-instagram"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="social-item">
-              <a href="#" class="social-link dark-theme">
-                <svg class="social-icon" width="24" height="24">
-                  <use href="./images/sprite.svg#icon-twitter"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="social-item">
-              <a href="#" class="social-link dark-theme">
-                <svg class="social-icon" width="24" height="24">
-                  <use href="./images/sprite.svg#icon-facebook"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="social-item">
-              <a href="#" class="social-link dark-theme">
-                <svg class="social-icon" width="24" height="24">
-                  <use href="./images/sprite.svg#icon-linkedin"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
-        </div>
+          <div class="footer-wrapper-description">
+            <a href="./index.html" class="logo link">WEB<span class="logo-footer">STUDIO</span></a>
+            <p class="text-footer">
+              Increase the flow of customers and sales for your business with
+              digital marketing & growth solutions.
+            </p>
+          </div>
+          <div class="footer-social-wrapper">
+            <p class="text">Social media</p>
+            <ul class="social-list list">
+              <li class="social-item">
+                <a href="#" class="social-link dark-theme">
+                  <svg class="social-icon" width="24" height="24">
+                    <use href="./images/sprite.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-item">
+                <a href="#" class="social-link dark-theme">
+                  <svg class="social-icon" width="24" height="24">
+                    <use href="./images/sprite.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-item">
+                <a href="#" class="social-link dark-theme">
+                  <svg class="social-icon" width="24" height="24">
+                    <use href="./images/sprite.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-item">
+                <a href="#" class="social-link dark-theme">
+                  <svg class="social-icon" width="24" height="24">
+                    <use href="./images/sprite.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        
         <div class="footer-form">
           <p class="subscription-text">Subscribe</p>
           <form class="subscription-form" novalidate>
@@ -492,7 +515,7 @@
           </form>
         </div>
       </div>
-    </footer> -->
+    </footer>
 
     <!-- <div class="backdrop is-hidden" data-modal>
       <div class="modal">
