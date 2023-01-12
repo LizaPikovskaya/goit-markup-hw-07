@@ -44,17 +44,18 @@
             >
           </li>
         </ul>
-        <button class="mobile-menu-open" data-modal-open>
+        <button class="mobile-menu-open js-open-menu" aria-expanded="false"
+        aria-controls="mobile-menu">
           <svg class="mobile-burger-menu" width="32" height="22">
             <use href="./images/sprite.svg#icon-menu-mobile-hamburger"></use>
           </svg>
         </button>
        
       </div>
-<div class="mobile-menu is-hidden" data-modal>
+<div class="mobile-menu js-menu-container" id="mobile-menu">
       <div class="mobile-container container">
         
-          <button class="mobile-menu-close" data-modal-close>
+          <button class="mobile-menu-close js-close-menu">
             <svg class="mobile-close-icon" width="8" height="8">
               <use href="./images/sprite.svg#icon-close-menu-mobile"></use>
             </svg>
@@ -517,7 +518,7 @@
       </div>
     </footer>
 
-    <!-- <div class="backdrop is-hidden" data-modal>
+    <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button type="button" class="modal-close-button" data-modal-close>
           <svg class="close-vector" width="8" height="8">
@@ -585,7 +586,7 @@
         </div>
       </div>
     </div>
-    <script src="./js/modal.js"></script> -->
+    <script src="./js/modal.js"></script>
   
   
   
