@@ -229,6 +229,7 @@ button {
       visibility var(--transition-dur-and-func);
   }
   .mobile-container {
+    position: relative;
    display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -238,6 +239,7 @@ button {
     padding-top: 80px;
     padding-bottom: 40px;
     padding-left: 40px;
+    padding-right: 40px;
 overflow: auto;
 } 
    
@@ -305,9 +307,10 @@ overflow: auto;
   .mobile-social-list {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
-    /* gap: 56px; */
+    /* justify-content: space-around; */
+    gap: 55px;
   }
+
   .mobile-social-item {
     width: 40px;
     height: 40px;
